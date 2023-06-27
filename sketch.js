@@ -1,7 +1,9 @@
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(500, 400);
 }
 
 function draw() {
-  background(220);
+  background(imgFundo);
+  mostraAtor();
+  moveAtor();
 }
