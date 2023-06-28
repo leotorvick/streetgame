@@ -11,8 +11,8 @@ function moveAtor() {
     if (keyIsDown(UP_ARROW)){
         posYAtor -= 3;
         }
-        if (keyIsDown(DOWN_ARROW)){
-        if (limiteBorda()){
+    if (keyIsDown(DOWN_ARROW)){
+    if (limiteBorda()){
         posYAtor += 3;
         }
     }
@@ -20,5 +20,5 @@ function moveAtor() {
 
 function limiteBorda(){
     return posYAtor < 366;
-    }
+}
     

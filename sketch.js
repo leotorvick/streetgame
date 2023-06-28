@@ -5,5 +5,8 @@ function setup() {
 function draw() {
   background(imgFundo);
   mostraAtor();
+  mostraCarro();
+  moveCarro();
   moveAtor();
+  voltaCarroPosicaoInicial();
 }
