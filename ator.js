@@ -28,6 +28,7 @@ function colisaoAtorCarro() {
         colisao = collideRectCircle(posXCarros[i], posYCarros[i], comprimentoCarros, alturaCarro, posXAtor, posYAtor, 15)
         if (colisao){
             voltaAtorInicio();
+            somColisao.play();
             if (pontosMaiorQueZero()){
 
             }
@@ -49,6 +50,7 @@ function incluiPontos(){
 function marcaPontos() {
     if(posYAtor < 15){
         pontos += 1;
+        somPontuacao.play();
         voltaAtorInicio();
     }
 }
