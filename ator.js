@@ -1,10 +1,11 @@
 let posXAtor = 100;
-let posYAtor = 366;
+let posYAtor = 369;
 let colisao = false;
+let pontos = 0;
 
 
 function mostraAtor() {
-    image(imgAtor, posXAtor, posYAtor, 30, 30);
+    image(imgAtor, posXAtor, posYAtor, 26, 26);
 }
 
 function moveAtor() {
@@ -19,7 +20,7 @@ function moveAtor() {
 }
 
 function limiteBorda() {
-    return posYAtor < 366;
+    return posYAtor < 369;
 }
 
 function colisaoAtorCarro() {
@@ -27,10 +28,33 @@ function colisaoAtorCarro() {
         colisao = collideRectCircle(posXCarros[i], posYCarros[i], comprimentoCarros, alturaCarro, posXAtor, posYAtor, 15)
         if (colisao){
             voltaAtorInicio();
+            if (pontosMaiorQueZero()){
+
+            }
         }
     }
 }
 
 function voltaAtorInicio(){
-    posYAtor = 366
+    posYAtor = 369
+}
+
+function incluiPontos(){
+    textAlign(CENTER);
+    textSize(25);
+    fill(color(255, 250, 60));
+    text(pontos, width/ 5, 27);
+}
+
+function marcaPontos() {
+    if(posYAtor < 15){
+        pontos += 1;
+        voltaAtorInicio();
+    }
+}
+
+function pontosMaiorQueZero() {
+    if (pontos > 0){
+        pontos -= 1;
+    }
 }
