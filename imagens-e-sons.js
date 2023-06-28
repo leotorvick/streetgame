@@ -4,6 +4,10 @@ let imgCarro1;
 let imgCarro2;
 let imgCarro3;
 
+// Sons do jogo
+let trilhaSonora;
+let somColisao;
+let somPontuacao;
 
 function preload(){
     imgFundo = loadImage("libraries/imagens/estrada.png");
@@ -12,4 +16,5 @@ function preload(){
     imgCarro2 = loadImage("libraries/imagens/carro-2.png");
     imgCarro3 = loadImage("libraries/imagens/carro-3.png");
     imgCarros = [imgCarro1, imgCarro2, imgCarro3, imgCarro1, imgCarro3, imgCarro2];
+    trilhaSonora = loadSound("libraries/sons/trilha.mp3");
 }
