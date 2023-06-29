@@ -9,6 +9,7 @@ let trilhaSonora;
 let somColisao;
 let somPontuacao;
 
+
 function preload(){
     imgFundo = loadImage("libraries/imagens/estrada.png");
     imgAtor = loadImage("libraries/imagens/ator-1.png");

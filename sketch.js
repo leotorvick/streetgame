@@ -3,6 +3,7 @@ function setup() {
   trilhaSonora.loop();
 }
 
+
 function draw() {
   background(imgFundo);
   mostraAtor();

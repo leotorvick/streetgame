@@ -4,6 +4,7 @@ let velocidadeCarros = [3, 2.5, 3.3, 3.8, 2, 3.5];
 let comprimentoCarros = 50;
 let alturaCarro = 40;
 
+
 function mostraCarro() {
     for (let i = 0; i < imgCarros.length; i++){
         image(imgCarros[i], posXCarros[i], posYCarros[i], comprimentoCarros, alturaCarro);
